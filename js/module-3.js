@@ -66,4 +66,115 @@ console.log("Task #2===========================================");
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
+console.log("Task #3==========================================");
 
+// Виконай рефакторинг функції countProps(object), замінивши 
+// перебір ключів за допомогою циклу for…in на метод Object.keys() 
+// для отримання масиву властивостей.Функція має повернути кількість 
+// властивостей в об'єкті object.
+// 
+// TEST:
+// Оголошена функція countProps(object)
+// Виклик countProps({}) повертає 0
+// Виклик countProps({ name: "Mango", age: 2 }) повертає 2
+// Виклик countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }) повертає 3
+// Функція використовує метод Object.keys()
+
+// function countProps(object) {
+//   let propCount = 0;
+//     propCount = Object.keys(object).length;
+
+
+//   return propCount;
+// }
+
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// console.log(countProps({}));
+
+console.log("Task #4==========================================");
+
+// Запиши у змінну keys масив ключів властивостей об'єкта apartment, 
+// а у змінну values - масив їх значень. 
+// Використовуй методи Object.keys() і Object.values().
+
+// Оголошена змінна apartment
+// Значення змінної apartment - це об'єкт
+// Оголошена змінна keys
+// Значення змінної keys - це масив ["descr", "rating", "price"]
+// Оголошена змінна values
+// Значення змінної values - це масив ["Spacious apartment in the city center", 4, 2153]
+// Для отримання масиву ключів об'єкта apartment використовується Object.keys()
+// Для отримання масиву значень об'єкта apartment використовується Object.values()
+
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+// };
+
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// console.log(keys);
+// console.log(values);
+
+console.log("Task #5==========================================");
+
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+
+//   let newArray = [];
+
+// //     for (let product of products) {
+
+// //         Object.keys(product).includes(propName) ? newArray.push(product[propName]) : [];
+// //         } 
+        
+//     //     return newArray;
+    // =================================================================
+//     // for (let product of products) {
+//     //     if (Object.keys(product).includes(propName)) {
+//     //        newArray.push(product[propName])
+//     //    } 
+        
+      
+//     // }
+//     // console.log(newArray);
+// }
+
+// console.log(getAllPropValues("quantity"));
+
+
+console.log("Task #6==========================================");
+
+
+function calculateTotalPrice(productName) {
+  const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+  ];
+    
+let message = "";
+
+    for (let product of products) {
+message = product.name === productName ? product.price * product.quantity : `Product ${productName} not found!`;
+
+    }
+  return message;
+
+
+}
+
+console.log(calculateTotalPrice("Radar"));
+console.log(calculateTotalPrice("Scanner"));
+console.log(calculateTotalPrice("Droid"));
+console.log(calculateTotalPrice("Grip"));
+console.log(calculateTotalPrice("Blaster"));

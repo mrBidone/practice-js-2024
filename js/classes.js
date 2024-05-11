@@ -140,28 +140,32 @@
 
 // =================== ЛАНЦЮЖОК ПРОТОТИПІВ ОБʼЄКТІВ ============================
 
-const ancestor = {
-  name: "Paul",
-  age: 83,
-  surname: "Dawson",
-  heritage: "Irish",
-};
+// const ancestor = {
+//   name: "Paul",
+//   age: 83,
+//   surname: "Dawson",
+//   heritage: "Irish",
+// };
 
-const parent = Object.create(ancestor);
-parent.name = "Stacey";
-parent.surname = "Moore";
-parent.age = 54;
+// const parent = Object.create(ancestor);
+// parent.name = "Stacey";
+// parent.surname = "Moore";
+// parent.age = 54;
 
-const child = Object.create(parent);
-child.name = "Jason";
-child.age = 27;
+// const child = Object.create(parent);
+// child.name = "Jason";
+// child.age = 27;
 
-console.log("A:",child);
-console.log("B:",parent);
-console.log("C:", ancestor);
-console.log(child.name);
-console.log(ancestor.name);
-console.log(parent.name);
+// console.log("A:",child);
+// console.log("B:",parent);
+// console.log("C:", ancestor);
+// console.log(child.name);
+// console.log(ancestor.name);
+// console.log(parent.name);
+
+// =================== КЛАСИ ============================
+
+
 
 
 

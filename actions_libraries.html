@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/actions-libraries.css">
+</head>
+<body>
+    <a href="index.html">to Main</a>
+    <!-- EVENT BUBBLING -->
+    <div id="parent">
+        Parent
+        <div id="child">
+            Child
+            <div id="descendant">Descendant</div>
+        </div>
+    </div>
+    <!-- EVENT BUBBLING -->
+
+
+    <!-- EVENT DELEGATION -->
+    <div class="box">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+        <button>Button 5</button>
+        <button>Button 6</button>
+        <button>Button 7</button>
+        <button>Button 8</button>
+    </div>
+
+        <!-- EVENT DELEGATION -->
+
+        <!-- ПЕРЕВІРКА ЦІЛЬОВОГО ЕЛЕМЕНТА ПОДІЇ -->
+
+        <p class="output">Selected color: -</p>
+        <div class="color-palette"></div>
+
+
+
+        <!-- ПЕРЕВІРКА ЦІЛЬОВОГО ЕЛЕМЕНТА ПОДІЇ -->
+
+
+    <script src="
+        https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+        " async></script>
+    <script src="./js/actions_libraries.js" type="module"></script>
+    
+</body>
+</html>

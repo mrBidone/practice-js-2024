@@ -143,7 +143,81 @@
 // const result = getUsersByGenderByAge(users, "male", 27);
 
 // console.log(result)
-    
+
+// ====================MODULE 7-8======================
+
+/*
+Завдання 1
+Натискання на кнопку "SHOW ME" має виводити значення з поля введення (дивіться на елементи в html-розмітці)
+*/
+
+// const inputData = document.querySelector("#alertInput");
+// const showBtn = document.querySelector("#alertButton");
+// const 
+
+// const refs = {
+//     taskTitle: document.querySelector(".taskTitle"),
+//     alertButton: document.querySelector("#alertButton"),
+//     alertInput: document.querySelector("#alertInput")
+// };
+
+// refs.alertButton.addEventListener("click", onAlertButtonClick => {
+//     refs.taskTitle.textContent = refs.alertInput.value;
+// });
+
+/*
+Завдання 8
+При натисканні на кожну з кнопок підсумовуються значення з data-атрибутів.
+За натисканням на кнопку "Вивести результат" виводиться сума значення, а також статистика з
+інформацією про те, яка кнопка була натиснута скільки разів.
+*/
+
+// const refs = {
+//     statList: document.querySelector(".statList"),
+//     calcButton: document.querySelector(".calcButton"),
+//     resultButton: document.querySelector("#resultButton"),
+//     resultSection: document.querySelector("#resultSection")
+// }
+
+// console.log(refs);
+
+// refs.statList.addEventListener("click", onStatListItemClick);
+
+// let total = 0;
+// const clickStat = {};
+
+// function onStatListItemClick(event) {
+//     total += Number(event.target.dataset.number);
+//     clickStat[event.target.textContent] = (clickStat[event.target.textContent] || 0) +1;
+//     console.log(clickStat);
+// };
+
+
+// *
+// Завдання 9
+// Видалити зі списку елементи, які позначені.
+// */
+
+
+/*
+Завдання 2
+Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
+Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+*/
+
+
+
+/*
+Завдання 10
+Наведено список людей. Зроби можливість сортування списку на ім'я та на прізвище.
+*/
+
+
+
+
+
+
+
 
 
 

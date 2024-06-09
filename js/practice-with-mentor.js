@@ -153,7 +153,7 @@
 
 // const inputData = document.querySelector("#alertInput");
 // const showBtn = document.querySelector("#alertButton");
-// const 
+
 
 // const refs = {
 //     taskTitle: document.querySelector(".taskTitle"),
@@ -197,6 +197,20 @@
 // Завдання 9
 // Видалити зі списку елементи, які позначені.
 // */
+
+const checkList = document.querySelector(".checkboxList");
+const checkBoxContainer = document.querySelectorAll(".checkboxWrapper");
+const submitButton = document.querySelector("button");
+const checkBox = document.querySelectorAll("input");
+
+console.log(checkBox)
+
+submitButton.addEventListener('submit', event => {
+     event.preventDefault();
+}) 
+   
+    
+
 
 
 /*
